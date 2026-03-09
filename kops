@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>For Ayanda ❤️</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
+
+<style>
+
+body{
+    margin:0;
+    font-family:'Poppins',sans-serif;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    height:100vh;
+    overflow:hidden;
+
+    background: linear-gradient(-45deg,#ff9a9e,#fad0c4,#ffdde1,#ff758c);
+    background-size:400% 400%;
+    animation:gradientMove 12s ease infinite;
+}
+
+@keyframes gradientMove{
+0%{background-position:0% 50%;}
+50%{background-position:100% 50%;}
+100%{background-position:0% 50%;}
+}
+
+/* intro screen */
+
+#intro{
+    position:absolute;
+    color:white;
+    font-size:40px;
+    text-align:center;
+    animation:fadeIn 3s ease;
+}
+
+@keyframes fadeIn{
+from{opacity:0;}
+to{opacity:1;}
+}
+
+/* main card */
+
+.container{
+    display:none;
+    background:white;
+    padding:50px;
+    border-radius:20px;
+    width:600px;
+    text-align:center;
+    box-shadow:0 15px 40px rgba(0,0,0,0.2);
+    z-index:10;
+}
+
+h1{
+font-family:'Great Vibes',cursive;
+font-size:60px;
+color:#ff4d6d;
+}
+
+p{
+font-size:18px;
+line-height:1.7;
+}
+
+.song{
+font-style:italic;
+color:#666;
+}
+
+button{
+margin-top:20px;
+padding:12px 28px;
+border:none;
+border-radius:12px;
+cursor:pointer;
+font-family:'Poppins';
+}
+
+.yes{
+background:#ff4d6d;
+color:white;
+}
+
+.no{
+background:#ddd;
+}
+
+/* hearts */
+
+.heart{
+position:fixed;
+bottom:-10px;
+font-size:22px;
+animation:floatUp 6s linear infinite;
+}
+
+@keyframes floatUp{
+0%{transform:translateY(0);opacity:1;}
+100%{transform:translateY(-110vh);opacity:0;}
+}
+
+</style>
+</head>
+
+<body>
+
+<div id="intro">
+A message for Ayanda ❤️
+</div>
+
+<!-- Floating hearts -->
+
+<div class="heart" style="left:10%;animation-delay:0s;">❤️</div>
+<div class="heart" style="left:25%;animation-delay:2s;">💖</div>
+<div class="heart" style="left:40%;animation-delay:4s;">❤️</div>
+<div class="heart" style="left:60%;animation-delay:1s;">💗</div>
+<div class="heart" style="left:75%;animation-delay:3s;">❤️</div>
+<div class="heart" style="left:90%;animation-delay:5s;">💖</div>
+
+<div class="container" id="main">
+
+<h1>Ayanda</h1>
+
+<p>
+I made this little page for you because I wanted to say something from the heart.
+</p>
+
+<p>
+Remember the first time I saw you? I know I always tell you this story,
+but I’ll forever cherish the day I first saw you because I knew right away
+that's my forever girl.
+</p>
+
+<p>
+I can't even fully describe what I felt in that moment.
+It’s one of those once-in-a-lifetime feelings that you just know is real.
+</p>
+
+<p>
+No matter what happens, that moment will always be special to me.
+</p>
+
+<p class="song">
+Always & Forever – Mariah The Scientist 🎵
+</p>
+
+<p>
+I’m not asking for anything big right now. Just a conversation.
+</p>
+
+<h2>Can we talk over FaceTime?</h2>
+
+<button class="yes" onclick="alert('I’ll be waiting for your call ❤️')">Yes</button>
+<button class="no" onclick="alert('I understand. Thank you for reading this.')">No</button>
+
+</div>
+
+<script>
+
+setTimeout(function(){
+document.getElementById("intro").style.display="none";
+document.getElementById("main").style.display="block";
+},4000);
+
+</script>
+
+</body>
+</html>
